@@ -1,0 +1,21 @@
+{
+  "technology": [
+    {
+      "list": "Java基础",
+      "body": [
+        {
+          "title": "Java包装类介绍与类型之间相互转换",
+          "mdPath": "md/Java包装类介绍与类型之间相互转换.md"
+        },
+        {
+          "title": "Java解析XML文件的常用方法介绍",
+          "mdPath": "md/Java解析XML文件的常用方法介绍.md"
+        }
+      ]
+    }
+  ],
+  "top": {
+    "title": "Java包装类介绍与类型之间相互转换",
+    "mdPath": "md/Java包装类介绍与类型之间相互转换.md"
+  }
+}

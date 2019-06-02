@@ -1,0 +1,246 @@
+/*字体*/
+.ml-sm-font {
+    font-size: small;
+}
+
+.ml-md-font {
+    font-size: medium;
+}
+
+.ml-lg-font {
+    font-size: large;
+}
+
+/*左右内边距*/
+.ml-sm-padding-lr {
+    padding: 0 1rem;
+}
+
+.ml-md-padding-lr {
+    padding: 0 1.5rem;
+}
+
+.ml-lg-padding-lr {
+    padding: 0 2rem;
+}
+
+/*上下内边距*/
+.ml-sm-padding-tb {
+    padding: 1rem 0;
+}
+
+.ml-md-padding-tb {
+    padding: 1.5rem 0;
+}
+
+.ml-lg-padding-tb {
+    padding: 2rem 0;
+}
+
+/*左右外边距*/
+.ml-sm-margin-lr {
+    margin: 0 1rem;
+}
+
+.ml-md-margin-lr {
+    margin: 0 1.5rem;
+}
+
+.ml-lg-margin-lr {
+    margin: 0 2rem;
+}
+
+/*上下外边距*/
+.ml-sm-margin-tb {
+    margin: 1rem 0;
+}
+
+.ml-md-margin-tb {
+    margin: 1.5rem 0;
+}
+
+.ml-lg-margin-tb {
+    margin: 2rem 0;
+}
+
+/*水平垂直居中*/
+.ml-horizontal-vertical-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*居中*/
+.ml-center {
+    text-align: center;
+}
+
+/*透明度*/
+.ml-sm-opacity {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.ml-md-opacity {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ml-lg-opacity {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/*字体颜色*/
+.ml-color-white {
+    color: white;
+}
+
+.ml-color-black {
+    color: black;
+}
+
+/*边框*/
+/*左白*/
+.ml-sm-border-l-white {
+    border-left: 1px solid white;
+}
+
+.ml-md-border-l-white {
+    border-left: 2px solid white;
+}
+
+.ml-lg-border-l-white {
+    border-left: 3px solid white;
+}
+
+/*右白*/
+.ml-sm-border-r-white {
+    border-right: 1px solid white;
+}
+
+.ml-md-border-r-white {
+    border-right: 2px solid white;
+}
+
+.ml-lg-border-r-white {
+    border-right: 3px solid white;
+}
+
+/*上白*/
+.ml-sm-border-t-white {
+    border-top: 1px solid white;
+}
+
+.ml-md-border-t-white {
+    border-top: 2px solid white;
+}
+
+.ml-lg-border-t-white {
+    border-top: 3px solid white;
+}
+
+/*下白*/
+.ml-sm-border-b-white {
+    border-bottom: 1px solid white;
+}
+
+.ml-md-border-b-white {
+    border-bottom: 2px solid white;
+}
+
+.ml-lg-border-b-white {
+    border-bottom: 3px solid white;
+}
+
+/*左黑*/
+.ml-sm-border-l-black {
+    border-left: 1px solid black;
+}
+
+.ml-md-border-l-black {
+    border-left: 2px solid black;
+}
+
+.ml-lg-border-l-black {
+    border-left: 3px solid black;
+}
+
+/*右黑*/
+.ml-sm-border-r-black {
+    border-right: 1px solid black;
+}
+
+.ml-md-border-r-black {
+    border-right: 2px solid black;
+}
+
+.ml-lg-border-r-black {
+    border-right: 3px solid black;
+}
+
+/*上黑*/
+.ml-sm-border-t-black {
+    border-top: 1px solid black;
+}
+
+.ml-md-border-t-black {
+    border-top: 2px solid black;
+}
+
+.ml-lg-border-t-black {
+    border-top: 3px solid black;
+}
+
+/*下黑*/
+.ml-sm-border-b-black {
+    border-bottom: 1px solid black;
+}
+
+.ml-md-border-b-black {
+    border-bottom: 2px solid black;
+}
+
+.ml-lg-border-b-black {
+    border-bottom: 3px solid black;
+}
+
+/*边框圆角*/
+.ml-sm-border-radius {
+    border-radius: 0.5rem;
+}
+
+.ml-md-border-radius {
+    border-radius: 1rem;
+}
+
+.ml-lg-border-radius {
+    border-radius: 1.5rem;
+}
+
+/*块级元素*/
+.ml-display-block {
+    display: block;
+}
+
+/*行级元素*/
+.ml-display-inline {
+    display: inline;
+}
+
+/*隐藏*/
+.ml-display-none {
+    display: none;
+}
+
+/*内外边距*/
+.ml-padding {
+    padding: 1rem;
+}
+
+.ml-margin {
+    margin: 1rem;
+}
+
+/*选择鼠标样式*/
+.ml-mouse-hover {
+    cursor: pointer;
+}

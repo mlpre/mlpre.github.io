@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+#ml-container {
+    width: 50%;
+}
+
+body {
+    background: #8360c3;
+    background: -webkit-linear-gradient(to left, #2ebf91, #8360c3);
+    background: linear-gradient(to left, #2ebf91, #8360c3);
+}
+
+#ml-blog:hover, #ml-open:hover, #ml-cn-blog:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#ml-cn-blog {
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}

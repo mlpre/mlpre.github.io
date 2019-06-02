@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5d5;
+}
+
+html, body {
+    height: 100%;
+}
+
+#ml-header > a {
+    display: inline-block;
+}
+
+#ml-header > a {
+    padding: 0.5rem 1.5rem;
+}
+
+#ml-header {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#ml-header > a:not(:last-child) {
+    border-right: 1px solid #d3d3d3;
+}
+
+#ml-header > a > span {
+    color: #556677;
+}
+
+@media all and (min-width: 768px) {
+    #ml-header {
+        margin: 0 8%;
+        padding: 0.8rem 0;
+    }
+
+    #ml-container {
+        position: relative;
+        margin: 0 8%;
+    }
+
+    #ml-body {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-right: 1px solid #d3d3d3;
+    }
+
+    #ml-side {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #ml-header {
+        margin: 0 1%;
+        padding: 0.8rem 0;
+    }
+
+    #ml-container {
+        position: relative;
+        margin: 0 1%;
+    }
+
+    #ml-body {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #ml-side {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+#ml-body h1, h2, h3, h4, h5, h6 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#ml-body ul {
+    list-style: none;
+    margin: 1rem;
+}
+
+#ml-body pre {
+    font-size: large;
+    padding: 1rem;
+}
+
+#ml-body ol {
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+#ml-body h1, h2 {
+    padding-bottom: 1rem;
+}
+
+#ml-body p {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+#ml-side ul, li {
+    list-style: none;
+}
+
+#ml-side > h3 {
+    margin: 0;
+    border-bottom: 1px solid #d3d3d3;
+    text-align: center;
+    padding: 1rem
+}
+
+.ml-list {
+    padding: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    border-radius: 1rem;
+}
+
+.ml-list:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
