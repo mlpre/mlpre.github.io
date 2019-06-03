@@ -35,10 +35,14 @@ html, body {
     color: #556677;
 }
 
-@media all and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
     #ml-header {
         margin: 0 8%;
         padding: 0.8rem 0;
+    }
+
+    #ml-header > a > span {
+        font-size: 1rem;
     }
 
     #ml-container {
@@ -64,10 +68,14 @@ html, body {
     }
 }
 
-@media all and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
     #ml-header {
         margin: 0 1%;
         padding: 0.8rem 0;
+    }
+
+    #ml-header > a > span {
+        font-size: 2rem;
     }
 
     #ml-container {
@@ -85,6 +93,10 @@ html, body {
         width: 100%;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+
+    #ml-side > h3 {
+        font-size: 2rem;
     }
 }
 

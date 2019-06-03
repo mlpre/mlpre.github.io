@@ -11,8 +11,21 @@ html, body {
     height: 100%;
 }
 
-#ml-container {
-    width: 50%;
+@media only screen and (min-width: 1025px) {
+    #ml-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #ml-container {
+        width: 80%;
+    }
+
+    #ml-container div, #ml-container span {
+        padding: 3rem;
+        font-size: 2rem;
+    }
 }
 
 body {
