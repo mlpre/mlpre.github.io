@@ -2,7 +2,8 @@
 
 报错如下：
 
-Error querying database. Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'Minli'@'localhost' (using password: YES)
+Access denied for user 'Minli'@'localhost' (using password: YES)
+
 根据提示，应该是Mysql的用户名和密码错误导致的问题，查看database配置文件，也没有发现问题。
 
 database配置文件：
