@@ -34,6 +34,41 @@ body {
     background: linear-gradient(to left, #2ebf91, #8360c3);
 }
 
+#ml-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+}
+
+#ml-title {
+    padding: 1.5rem;
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+#ml-blog, #ml-open {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid white;
+}
+
+#ml-cn-blog {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#ml-blog > span, #ml-open > span, #ml-cn-blog > span {
+    color: white;
+    font-size: large;
+}
+
 #ml-blog:hover, #ml-open:hover, #ml-cn-blog:hover {
     background: rgba(0, 0, 0, 0.1);
 }

@@ -152,3 +152,15 @@ html, body {
 .ml-list:hover {
     background: rgba(0, 0, 0, 0.1);
 }
+
+.ml-list-body {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.ml-list-body-show {
+    cursor: pointer;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.1);
+}

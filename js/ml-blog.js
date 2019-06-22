@@ -33,7 +33,7 @@ function showList(list, list_num) {
 }
 
 function showListBody(body, mdPath, list_num) {
-    $("#" + list_num).append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-display-none ml-center ml-padding'>" + body + "</div>");
+    $("#" + list_num).append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-list-body'>" + body + "</div>");
 }
 
 function showBody(list_num) {
@@ -56,13 +56,9 @@ function openBody(mdPath) {
 }
 
 function addOpacity(body) {
-    $(body).addClass('ml-mouse-hover');
-    $(body).addClass('ml-md-border-radius');
-    $(body).addClass('ml-sm-opacity');
+    $(body).addClass('ml-list-body-show');
 }
 
 function removeOpacity(body) {
-    $(body).removeClass('ml-mouse-hover');
-    $(body).removeClass('ml-md-border-radius');
-    $(body).removeClass('ml-sm-opacity');
+    $(body).removeClass('ml-list-body-show');
 }
