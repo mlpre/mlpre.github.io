@@ -57,7 +57,6 @@ html, body {
         width: 80%;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        border-right: 1px solid #d3d3d3;
     }
 
     #ml-side {
@@ -65,6 +64,7 @@ html, body {
         right: 0;
         top: 0;
         width: 20%;
+        margin-top: 2rem;
     }
 }
 
@@ -136,9 +136,10 @@ html, body {
 
 #ml-side > h3 {
     margin: 0;
-    border-bottom: 1px solid #d3d3d3;
     text-align: center;
-    padding: 1rem
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 1rem;
 }
 
 .ml-list {
@@ -163,4 +164,11 @@ html, body {
     cursor: pointer;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.1);
+}
+
+.ml-body-div {
+    padding: 2rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }

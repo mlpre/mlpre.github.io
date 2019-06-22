@@ -4,26 +4,12 @@ $(function () {
         type: 'get',
         async: false,
         success: function (data) {
-            for (var i = 0; i < data.technology.length; i++) {
-                if (data.technology[i].mdPath != '') {
-                    var list_num = 'list_';
-                    showList(data.technology[i].list, list_num + i);
-                    for (var j = 0; j < data.technology[i].body.length; j++) {
-                        showListBody(data.technology[i].body[j].title, data.technology[i].body[j].mdPath, list_num + i);
-                    }
+            for (let i = 0; i < data.length; i++) {
+                showList(data[i].list, 'list_' + i);
+                for (let j = 0; j < data[i].body.length; j++) {
+                    showListBody(data[i].body[j].title, data[i].body[j].mdPath, 'list_' + i);
                 }
             }
-            $.ajax({
-                url: data.top.mdPath,
-                type: 'get',
-                async: false,
-                success: function (data) {
-                    $('#ml-body').html(marked(data));
-                    $('code').each(function (i, block) {
-                        hljs.highlightBlock(block);
-                    });
-                }
-            })
         }
     });
 });
@@ -34,6 +20,7 @@ function showList(list, list_num) {
 
 function showListBody(body, mdPath, list_num) {
     $("#" + list_num).append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-list-body'>" + body + "</div>");
+    $("#ml-body").append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-body-div'>" + body + "</div>")
 }
 
 function showBody(list_num) {
