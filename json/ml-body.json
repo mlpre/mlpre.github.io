@@ -1,21 +1,41 @@
 [
   {
-    "list": "Java探索",
+    "list": "Java",
     "body": [
     ]
   },
   {
-    "list": "前端探索",
+    "list": "Go",
     "body": [
     ]
   },
   {
-    "list": "算法探索",
+    "list": "C/C++",
     "body": [
     ]
   },
   {
-    "list": "归纳总结",
+    "list": "Python",
+    "body": [
+    ]
+  },
+  {
+    "list": "前端",
+    "body": [
+    ]
+  },
+  {
+    "list": "Linux",
+    "body": [
+    ]
+  },
+  {
+    "list": "算法",
+    "body": [
+    ]
+  },
+  {
+    "list": "其它",
     "body": [
       {
         "title": "Java包装类介绍与类型之间相互转换",

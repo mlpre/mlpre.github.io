@@ -19,7 +19,7 @@ body {
 
 #ml-container {
     position: absolute;
-    width: 50%;
+    width: 90%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -28,7 +28,7 @@ body {
 }
 
 #ml-title, #ml-blog, #ml-open, #ml-cn-blog {
-    padding: 2rem 0;
+    padding: 6rem 0;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 #ml-title, #ml-blog > span, #ml-open > span, #ml-cn-blog > span {
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: white;
     text-align: center;
 }
