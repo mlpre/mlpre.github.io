@@ -7,7 +7,7 @@ $(function () {
             for (let i = 0; i < data.length; i++) {
                 showList(data[i].list, 'list_' + i);
                 for (let j = 0; j < data[i].body.length; j++) {
-                    showListBody(data[i].body[j].title, data[i].body[j].mdPath, 'list_' + i);
+                    showListBody(data[i].body[j].title, data[i].body[j].mdPath, data[i].body[j].show, 'list_' + i);
                 }
             }
         }
@@ -18,9 +18,11 @@ function showList(list, list_num) {
     $("#ml-list").append("<ul id=" + list_num + "><li onclick=showBody('" + list_num + "') class='ml-list'>" + list + "</li></ul>");
 }
 
-function showListBody(body, mdPath, list_num) {
+function showListBody(body, mdPath, show, list_num) {
     $("#" + list_num).append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-list-body'>" + body + "</div>");
-    $("#ml-body").append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-body-link'>" + body + "</div>")
+    if (show) {
+        $("#ml-body").append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-body-link'>" + body + "</div>")
+    }
 }
 
 function showBody(list_num) {

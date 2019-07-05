@@ -39,19 +39,23 @@
     "body": [
       {
         "title": "Java包装类介绍与类型之间相互转换",
-        "mdPath": "md/Java包装类介绍与类型之间相互转换.md"
+        "mdPath": "md/Java包装类介绍与类型之间相互转换.md",
+        "show": true
       },
       {
         "title": "Java解析XML文件的常用方法介绍",
-        "mdPath": "md/Java解析XML文件的常用方法介绍.md"
+        "mdPath": "md/Java解析XML文件的常用方法介绍.md",
+        "show": true
       },
       {
         "title": "Mybatis注解和配置文件命名规范所引发的问题",
-        "mdPath": "md/Mybatis注解和配置文件命名规范所引发的问题.md"
+        "mdPath": "md/Mybatis注解和配置文件命名规范所引发的问题.md",
+        "show": false
       },
       {
         "title": "一些Java基础方面问题的总结",
-        "mdPath": "md/一些Java基础方面问题的总结.md"
+        "mdPath": "md/一些Java基础方面问题的总结.md",
+        "show": false
       }
     ]
   }
