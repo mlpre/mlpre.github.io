@@ -1,9 +1,10 @@
-$(function () {
-    $.ajax({
-        url: 'json/ml-body.json',
-        type: 'get',
-        async: false,
-        success: function (data) {
+let ajax = new XMLHttpRequest();
+
+window.onload = function () {
+    ajax.open('get', "json/ml-body.json", false);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+            let data = JSON.parse(ajax.responseText);
             for (let i = 0; i < data.length; i++) {
                 showList(data[i].list, 'list_' + i);
                 for (let j = 0; j < data[i].body.length; j++) {
@@ -11,44 +12,49 @@ $(function () {
                 }
             }
         }
-    });
-});
+    };
+    ajax.send(null);
+};
 
 function showList(list, list_num) {
-    $("#ml-list").append("<ul id=" + list_num + "><li onclick=showBody('" + list_num + "') class='ml-list'>" + list + "</li></ul>");
+    document.querySelector('#ml-list').innerHTML += "<ul id=" + list_num + "><li onclick=showBody('" + list_num + "') class='ml-list'>" + list + "</li></ul>";
 }
 
 function showListBody(body, mdPath, show, list_num) {
-    $("#" + list_num).append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-list-body'>" + body + "</div>");
+    document.querySelector('#' + list_num).innerHTML += "<div onmouseover='opacity(this)' onmouseout='opacity(this)' onclick=openBody('" + mdPath + "') class='ml-list-body'>" + body + "</div>";
     if (show) {
-        $("#ml-body").append("<div onmouseover='addOpacity(this)' onmouseout='removeOpacity(this)' onclick=openBody('" + mdPath + "') class='ml-body-link'>" + body + "</div>")
+        document.querySelector('#ml-body').innerHTML += "<div onmouseover='opacity(this)' onmouseout='opacity(this)' onclick=openBody('" + mdPath + "') class='ml-body-link'>" + body + "</div>";
     }
 }
 
 function showBody(list_num) {
-    $("#" + list_num + ">div").toggle();
+    let body = document.querySelectorAll('#' + list_num + '>div');
+    for (let i = 0; i < body.length; i++) {
+        if (body[i].style.display == 'block') {
+            body[i].style.display = 'none';
+        } else {
+            body[i].style.display = 'block';
+        }
+    }
 }
 
 function openBody(mdPath) {
-    $('#ml-body').html('');
-    $.ajax({
-        url: mdPath,
-        type: 'get',
-        async: false,
-        success: function (data) {
-            $('#ml-body').html(marked(data));
-            $('code').each(function (i, block) {
-                hljs.highlightBlock(block);
-            });
+    document.querySelector('#ml-body').innerHTML = '';
+    ajax.open('get', mdPath, false);
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+            let data = ajax.responseText;
+            document.querySelector('#ml-body').innerHTML = marked(data);
+            let code = document.querySelectorAll('code');
+            for (let i = 0; i < code.length; i++) {
+                hljs.highlightBlock(code[i]);
+            }
             window.scrollTo(0, 0);
         }
-    })
+    };
+    ajax.send(null);
 }
 
-function addOpacity(body) {
-    $(body).addClass('ml-list-body-show');
-}
-
-function removeOpacity(body) {
-    $(body).removeClass('ml-list-body-show');
+function opacity(body) {
+    body.classList.toggle('ml-list-body-show');
 }
