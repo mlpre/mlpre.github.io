@@ -1,51 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    background-color: #f5f5d5;
-}
-
-html, body {
-    height: 100%;
-}
-
-#ml-header > a {
-    display: inline-block;
-}
-
-#ml-header > a {
-    padding: 0.5rem 1.5rem;
-}
-
 #ml-header {
-    margin: 0 8%;
-    padding: 1rem 0;
-    border-bottom: 1px solid #d3d3d3;
-}
-
-#ml-header > a:not(:last-child) {
-    border-right: 1px solid #d3d3d3;
-}
-
-#ml-header > a > span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black;
+    margin: 0.5rem 8rem;
 }
 
 #ml-container {
-    position: relative;
-    margin: 0 8%;
+    margin: 0 8rem;
 }
 
 #ml-body {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -72,93 +34,4 @@ html, body {
     #ml-side {
         width: 100%;
     }
-}
-
-/*Markdown样式*/
-#ml-body h1, h2, h3, h4, h5, h6 {
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-#ml-body ul {
-    font-size: 1.5rem;
-    list-style: none;
-    margin: 1rem;
-}
-
-#ml-body pre {
-    font-size: 1.2rem;
-    padding: 1rem;
-}
-
-#ml-body ol {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-}
-
-#ml-body h1, h2 {
-    padding-bottom: 1rem;
-}
-
-#ml-body p {
-    font-size: 1.2rem;
-    padding: 1rem;
-}
-
-/*Markdown样式*/
-
-#ml-side {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-}
-
-#ml-side ul, li {
-    list-style: none;
-}
-
-#ml-side > h3 {
-    font-size: 1.2rem;
-    margin: 0;
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid #d3d3d3;
-    border-radius: 1rem;
-}
-
-.ml-list {
-    font-size: 1.2rem;
-    padding: 1rem 0;
-    margin-top: 1rem;
-    text-align: center;
-    border: 1px solid #d3d3d3;
-    border-radius: 1rem;
-}
-
-.ml-list:hover {
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.ml-list-body {
-    font-size: 1.2rem;
-    display: none;
-    text-align: center;
-    padding: 1rem;
-    border-bottom: 1px solid #d3d3d3;
-}
-
-.ml-list-body-show {
-    cursor: pointer;
-    border-radius: 1rem;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.ml-body-link {
-    font-size: 1.2rem;
-    padding: 2rem;
-    border: 1px solid #d3d3d3;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
 }

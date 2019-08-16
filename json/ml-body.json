@@ -50,12 +50,12 @@
       {
         "title": "Mybatis注解和配置文件命名规范所引发的问题",
         "mdPath": "md/Mybatis注解和配置文件命名规范所引发的问题.md",
-        "show": false
+        "show": true
       },
       {
         "title": "一些Java基础方面问题的总结",
         "mdPath": "md/一些Java基础方面问题的总结.md",
-        "show": false
+        "show": true
       }
     ]
   }

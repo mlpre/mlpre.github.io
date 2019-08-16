@@ -24,11 +24,17 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.2);
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #ml-container {
+        width: 90%;
+    }
 }
 
 #ml-title, #ml-blog, #ml-open, #ml-cn-blog {
-    padding: 2rem 0;
+    padding: 1.8rem 0;
     text-align: center;
 }
 
@@ -41,7 +47,7 @@ body {
 }
 
 #ml-title, #ml-blog > span, #ml-open > span, #ml-cn-blog > span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     text-align: center;
 }
@@ -51,6 +57,6 @@ body {
 }
 
 #ml-cn-blog {
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
