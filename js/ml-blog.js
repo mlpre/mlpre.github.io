@@ -44,7 +44,7 @@ function openBody(mdPath) {
     ajax.onreadystatechange = function () {
         if (ajax.readyState == 4 && ajax.status == 200) {
             let data = ajax.responseText;
-            document.querySelector('#ml-body').innerHTML = marked(data);
+            document.querySelector('#ml-body').innerHTML = marked.parse(data);
             let code = document.querySelectorAll('code');
             for (let i = 0; i < code.length; i++) {
                 hljs.highlightBlock(code[i]);
