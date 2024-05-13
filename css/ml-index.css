@@ -33,30 +33,30 @@ body {
     }
 }
 
-#ml-title, #ml-blog, #ml-open, #ml-cn-blog {
+#ml-title, #ml-blog, #ml-open, #ml-cn-blog, #ai {
     padding: 1.8rem 0;
     text-align: center;
 }
 
-#ml-title, #ml-blog, #ml-open {
+#ml-title, #ml-blog, #ml-open, #ml-cn-blog {
     border-bottom: 1px solid white;
 }
 
-#ml-blog, #ml-open, #ml-cn-blog {
+#ml-blog, #ml-open, #ml-cn-blog, #ai {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#ml-title, #ml-blog > span, #ml-open > span, #ml-cn-blog > span {
+#ml-title, #ml-blog, #ml-open, #ml-cn-blog, #ai > span {
     font-size: 1.2rem;
     color: white;
     text-align: center;
 }
 
-#ml-blog:hover, #ml-open:hover, #ml-cn-blog:hover {
+#ml-blog:hover, #ml-open:hover, #ml-cn-blog:hover, #ai:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
-#ml-cn-blog {
+#ai {
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
