@@ -33,7 +33,7 @@ body {
     }
 }
 
-#ml-title, #ml-blog, #ml-open, #ml-cn-blog, #ai {
+#ml-title, #ml-blog, #ml-open, #ml-cn-blog {
     padding: 1.8rem 0;
     text-align: center;
 }
@@ -42,21 +42,62 @@ body {
     border-bottom: 1px solid white;
 }
 
-#ml-blog, #ml-open, #ml-cn-blog, #ai {
+#ml-blog, #ml-open, #ml-cn-blog {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#ml-title, #ml-blog, #ml-open, #ml-cn-blog, #ai > span {
+#ml-title, #ml-blog, #ml-open, #ml-cn-blog {
     font-size: 1.2rem;
     color: white;
     text-align: center;
 }
 
-#ml-blog:hover, #ml-open:hover, #ml-cn-blog:hover, #ai:hover {
+#ml-blog:hover, #ml-open:hover, #ml-cn-blog:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
-#ai {
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+#chat-container {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+#chat-input {
+    width: calc(100% - 20px);
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+#chat-input:hover,
+#chat-input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+}
+
+#chat-button {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#chat-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
