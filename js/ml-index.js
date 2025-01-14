@@ -3,16 +3,16 @@ function chat() {
     const chat_box = document.getElementById('chat-box');
     const message = chat_input.value.trim();
     if (message) {
-        chat_box.innerHTML += `<div><strong>你:</strong> ${message}</div>`;
+        chat_box.innerHTML += `<div><strong>ME: </strong>${message}</div>`;
         chat_input.value = '';
-        fetch(`https://ai.minli.cc?chat=${encodeURIComponent(message)}`)
-            .then(response => response.json())
-            .then(data => {
-                chat_box.innerHTML += `<div><strong>AI:</strong> ${data.response}</div>`;
-                chat_box.scrollTop = chat_box.scrollHeight;
-            })
-            .catch(() => {
-                chat_box.innerHTML += `<div><strong>AI:</strong> 出错了！</div>`;
-            });
+        const source = new EventSource(`https://ai.minli.cc?chat=${encodeURIComponent(message)}`);
+        chat_box.innerHTML += `<strong>AI: </strong>`;
+        source.onmessage = function (event) {
+            chat_box.innerHTML += JSON.parse(event.data).response;
+            chat_box.scrollTop = chat_box.scrollHeight;
+        }
+        source.onerror = function (event) {
+            source.close();
+        }
     }
 }
