@@ -95,3 +95,18 @@ body {
 #chat-button:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+#language {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#language:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
