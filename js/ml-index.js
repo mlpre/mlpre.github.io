@@ -43,7 +43,7 @@ function initLanguage() {
 }
 
 function switchLanguage() {
-    const language = localStorage.getItem('language') || navigator.language;
+    const language = localStorage.getItem('language') || 'zh';
     const newLanguage = language === 'zh' ? 'en' : 'zh';
     localStorage.setItem('language', newLanguage);
     loadLanguage(newLanguage);
@@ -58,6 +58,7 @@ function loadLanguage(language) {
     document.getElementById('chat-input').value = content.chat_input;
     document.getElementById('chat-button').innerText = content.chat_button;
     document.getElementById('language').innerText = content.language;
+    document.body.classList.add('loaded');
 }
 
 initLanguage();

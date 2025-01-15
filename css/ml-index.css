@@ -17,6 +17,14 @@ body {
     background: linear-gradient(to left, #2ebf91, #8360c3);
 }
 
+body {
+    visibility: hidden;
+}
+
+body.loaded {
+    visibility: visible;
+}
+
 #ml-container {
     position: absolute;
     width: 40%;
