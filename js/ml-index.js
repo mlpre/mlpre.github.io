@@ -8,7 +8,8 @@ function chat() {
         const source = new EventSource(`https://ai.minli.cc?chat=${encodeURIComponent(message)}`);
         chat_box.innerHTML += `<strong>AI: </strong>`;
         source.onmessage = function (event) {
-            chat_box.innerHTML += JSON.parse(event.data).response;
+            const data = JSON.parse(event.data);
+            chat_box.innerHTML += data.response || '';
             chat_box.scrollTop = chat_box.scrollHeight;
         }
         source.onerror = function (event) {
