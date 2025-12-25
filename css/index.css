@@ -25,7 +25,7 @@ body.loaded {
     visibility: visible;
 }
 
-#ml-container {
+#container {
     position: absolute;
     width: 40%;
     left: 50%;
@@ -35,30 +35,30 @@ body.loaded {
 }
 
 @media screen and (max-width: 1000px) {
-    #ml-container {
+    #container {
         width: 90%;
     }
 }
 
-#ml-title, #ml-blog, #ml-open {
+#title, #blog, #open {
     padding: 1.5rem 0;
     text-align: center;
 }
 
-#ml-title, #ml-blog, #ml-open {
+#title, #open {
     border-bottom: 0.1rem solid white;
 }
 
-#ml-blog, #ml-open {
+#blog, #open {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#ml-title, #ml-blog, #ml-open {
+#title, #blog, #open {
     color: white;
     text-align: center;
 }
 
-#ml-blog:hover, #ml-open:hover {
+#blog:hover, #open:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
