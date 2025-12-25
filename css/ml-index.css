@@ -62,48 +62,6 @@ body.loaded {
     background: rgba(0, 0, 0, 0.1);
 }
 
-#chat-container {
-    border: 0.1rem solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
-}
-
-#chat-box {
-    height: 15rem;
-    overflow-y: scroll;
-    border: 0.1rem solid rgba(255, 255, 255, 0.1);
-    background-color: transparent;
-    color: white;
-}
-
-#chat-input {
-    width: 100%;
-    padding: 0.5rem 0;
-    text-align: center;
-    border: 0.1rem solid rgba(255, 255, 255, 0.1);
-    background-color: transparent;
-    color: white;
-    outline: none;
-}
-
-#chat-input:hover,
-#chat-input:focus {
-    border: 0.1rem solid rgba(255, 255, 255, 0.2);
-    background-color: transparent;
-}
-
-#chat-button {
-    width: 100%;
-    padding: 0.5rem 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#chat-button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 #language {
     position: fixed;
     top: 1rem;
